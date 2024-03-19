@@ -1,0 +1,9 @@
+body {
+    background-image: url("Background\ paper.png");
+    background-size: cover;
+
+  }
+  #logo {
+    height: 100px;
+    width: 300px;
+  }
