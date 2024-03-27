@@ -10,12 +10,12 @@ body {
   }
 
   .logo {
-    width: 1200px;
-    height: 300px;
+    max-width: 1200px;
+    max-height: 300px;
    }
   .logo img {
-    height: 105%;
-    width: 110%;
+    height: 100%;
+    width: 105%;
         margin: 0 auto;
         object-fit: cover;
         justify-content: center;
@@ -66,4 +66,10 @@ body {
 
 ul {
   margin: 0px;
+}
+
+@media screen and (max-width: 970px) {
+  .main-content {
+    flex-direction: column;
+  }
 }
