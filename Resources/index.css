@@ -12,25 +12,29 @@ body {
   .logo {
     max-width: 1200px;
     max-height: 300px;
+    padding: 10px 20px 50px 20px;
    }
   .logo img {
-    height: 100%;
-    width: 105%;
+    height:100%;
+    width: 100%;
         margin: 0 auto;
         object-fit: cover;
         justify-content: center;
+        padding-left: 15px;
   }
 
-  h1 {
-  color: rgb(144, 2, 163);
+  h1, .aboutme h2, h3 {
+  color: rgb(134, 61, 255);
   text-align: center;
   font-family: 'Rockwell';
   font-size: 30px;
   color: white;
-  background-color: rgb(144, 12, 161);
+  background-color: rgb(134, 61, 255);
   padding-top: 2px;
   padding-bottom: 2px;
   }
+
+
 
   h2 {
     font-family: 'Rockwell';
@@ -50,7 +54,13 @@ body {
     font-family: 'Rockwell';
     font-size: 25px;
     text-align: center;
-    color: purple;
+    color: rgb(134, 61, 255);
+  }
+  a {
+    font-family: 'Rockwell';
+    font-size: 25px;
+    text-align: center;
+    color: rgb(250, 249, 247);
   }
 .pic1, #services {
   flex: 1; 
@@ -58,18 +68,41 @@ body {
 
 .pic1 img {
   width: 100%;
+  padding-left: 20px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .main-content {
   display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 ul {
   margin: 0px;
 }
 
-@media screen and (max-width: 970px) {
+.aboutme h1 {
+  padding: 0px 10px;
+}
+
+.aboutme p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
   .main-content {
     flex-direction: column;
   }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  
 }
